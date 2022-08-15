@@ -5,18 +5,17 @@
 
   .firstboard-text {
     padding: 0 35px;
-
   }
 
   .firstboard-typo {
-    font-size: 15px;
-    font-weight: 500;
-    color: #6055Ef;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6055ef;
   }
 
   .firstboard-header {
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 28px;
+    line-height: 32px;
     margin-bottom: 2rem;
   }
 
@@ -25,11 +24,9 @@
     font-family: inherit;
     font-weight: 400;
     color: #fff;
-    background-color: #6055Ef;
-    border: 1px solid #6055Ef;
+    background-color: #6055ef;
+    border: 1px solid #6055ef;
     border-radius: 9999px;
-    padding: 15px 30px;
-
+    padding: 15px 40px;
   }
-
 }
