@@ -7,9 +7,9 @@ function Firstboard() {
   return (
     <>
       <div className="firstboardcnt">
-        <div className="firstboard-image">
+        {/* <div className="firstboard-image">
           <img src={firstboardchatimg} alt="" />
-        </div>
+        </div> */}
         <div className="firstboard-text">
           <h2 className="firstboard-typo">Productivity Management👌</h2>
           <h1 className="firstboard-header">
