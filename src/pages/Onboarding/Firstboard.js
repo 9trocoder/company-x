@@ -1,5 +1,5 @@
 import React from "react";
-import task from "../../assets/task.svg";
+import firstboardchatimg from "../../assets/chat.svg";
 import "./Firstboard.css";
 
 function Firstboard() {
@@ -7,7 +7,7 @@ function Firstboard() {
     <>
       <div className="firstboardcnt">
         <div className="firstboard-image">
-          <img src={task} alt="" />
+          <img src={firstboardchatimg} alt="" />
         </div>
         <div className="firstboard-text">
           <h2>Productivity Management👌</h2>
