@@ -1,10 +1,11 @@
 import './App.css';
+import Firstboard from './pages/Onboarding/Firstboard';
 
 function App() {
   return (
-    <div className="App">
-      This is Company-X
-    </div>
+    <>
+      <Firstboard />
+    </>
   );
 }
 
