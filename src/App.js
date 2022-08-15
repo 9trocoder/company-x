@@ -1,11 +1,18 @@
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 import './App.css';
 import Firstboard from './pages/Onboarding/Firstboard';
+import Login from "./pages/Onboarding/Login";
+import Signup from "./pages/Onboarding/Signup";
 
 function App() {
   return (
-    <>
-      <Firstboard />
-    </>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Firstboard />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+    </Routes>
+    </BrowserRouter>
   );
 }
 
