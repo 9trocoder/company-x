@@ -43,7 +43,8 @@
     font-size: 18px;
     padding: 20px 0px 20px 20px;
     color: #1d1d1f;
-    border: 1px solid #e6e6e6;
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
     outline: none;
   }
 
