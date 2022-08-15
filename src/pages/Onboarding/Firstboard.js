@@ -10,14 +10,14 @@ function Firstboard() {
           <img src={firstboardchatimg} alt="" />
         </div>
         <div className="firstboard-text">
-          <h2>Productivity Management👌</h2>
-          <h1>
+          <h2 className="firstboard-typo">Productivity Management👌</h2>
+          <h1 className="firstboard-header">
             Lets create <br />
             a space <br /> for your workflows
-          </h1>
-        </div>
-        <div className="firstboard-btn">
-            <button>Get Started</button>
+          </h1>{" "}
+          <div className="firstboard-btn">
+            <button className="firstboard-button">Get Started</button>
+          </div>
         </div>
       </div>
     </>

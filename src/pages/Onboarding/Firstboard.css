@@ -2,4 +2,34 @@
   .firstboardcnt {
     padding: 15px 22px;
   }
+
+  .firstboard-text {
+    padding: 0 35px;
+
+  }
+
+  .firstboard-typo {
+    font-size: 15px;
+    font-weight: 500;
+    color: #6055Ef;
+  }
+
+  .firstboard-header {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 2rem;
+  }
+
+  .firstboard-button {
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 400;
+    color: #fff;
+    background-color: #6055Ef;
+    border: 1px solid #6055Ef;
+    border-radius: 9999px;
+    padding: 15px 30px;
+
+  }
+
 }
