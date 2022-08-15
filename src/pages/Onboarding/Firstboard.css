@@ -29,6 +29,7 @@
     border-radius: 9999px;
     padding: 18px 40px;
     text-decoration: none;
+    cursor: pointer;
   }
 
   .firstboard-email {

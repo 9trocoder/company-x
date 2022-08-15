@@ -1,0 +1,16 @@
+.signup-container {
+    padding: 15px 20px;
+
+}
+
+.signup-container-txt {
+    margin-bottom: 1rem;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
