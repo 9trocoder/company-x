@@ -1,6 +1,7 @@
 @media screen and (max-width: 500px) {
   .firstboardcnt {
     padding: 15px 0px;
+    margin-top: 1rem;
   }
 
   .firstboard-text {
@@ -44,5 +45,9 @@
     color: #1d1d1f;
     border: 1px solid #e6e6e6;
     outline: none;
+  }
+
+  .firstboard-input:focus {
+    border: none;
   }
 }
