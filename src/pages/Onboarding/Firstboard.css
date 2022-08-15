@@ -52,4 +52,10 @@
   .firstboard-input:focus {
     border: none;
   }
+
+  .firstform {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
 }

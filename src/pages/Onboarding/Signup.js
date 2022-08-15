@@ -25,12 +25,16 @@ function Signup() {
             type="password"
             placeholder="Your password*"
           />
-          <div className="thedown">
-            <button className="firstboard-button">Sign Up</button>
 
-            <p className="alreadybtn">Already have an account ? <span>Log In</span></p>
-          </div>
+        <div className="checkbox">
+            <input type="checkbox" />
+            <p>I Agree to the User Agreement, and acknowledge the Privacy Policy.</p>
+        </div>
           
+          <button className="firstboard-button">Sign Up</button>
+          <p className="alreadybtn">
+          <span>Sign up </span>as Organization
+          </p>
         </form>
       </div>
     </>

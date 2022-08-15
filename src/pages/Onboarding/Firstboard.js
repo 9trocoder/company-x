@@ -25,7 +25,7 @@ function Firstboard() {
             Lets create <br />
             a space <br /> for your workflows
           </h1>
-          <form action="" onSubmit={handleClick}>
+          <form className="firstform" action="" onSubmit={handleClick}>
             <div className="firstboard-email">
               <input
                 className="firstboard-input"
@@ -35,12 +35,13 @@ function Firstboard() {
                 placeholder="Your email address"
               />
             </div>
-            <div className="firstboard-btn">
               <button type="submit" className="firstboard-button">
                 Get Started
               </button>
-            </div>
           </form>
+          <p className="alreadybtn">
+            Already have an account ? <span>Log In</span>
+          </p>
         </div>
       </div>
     </>
