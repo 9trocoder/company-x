@@ -1,5 +1,42 @@
 @media screen and (max-width: 500px) {
     .homepagecnt {
         padding: 15px 20px;
+        position: relative;
+    }
+
+    .homepage-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        position: fixed;
+        width: 100%;
+    }
+
+    .homepage-nav-links {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .homepage-nav-chat {
+        position: relative;
+    }
+
+    .hompage-nav-chat svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .homechatntf {
+        position: absolute;
+        top: 0;
+    }
+
+    .homepage-profile img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 9999px;
     }
 }
