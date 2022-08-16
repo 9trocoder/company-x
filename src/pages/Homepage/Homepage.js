@@ -42,7 +42,10 @@ function Homepage() {
           </div>
         </div>
       </nav>
-      <div className="homepagecnt"></div>
+      <div className="homepagecnt">
+        <h1 className="homepagewelcometxt">Hello <br />Oladimeji Adeyemi 👋
+        </h1>
+      </div>
     </>
   );
 }

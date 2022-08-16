@@ -1,8 +1,4 @@
 @media screen and (max-width: 500px) {
-  .homepagecnt {
-    padding: 15px 20px;
-  }
-
   .homepage-nav {
     display: flex;
     align-items: center;
@@ -11,6 +7,15 @@
     background-color: white;
     position: fixed;
     width: 100%;
+  }
+  .homepagecnt {
+    padding: 15px 20px;
+    padding-top: 5rem;
+  }
+
+  .homepagewelcometxt {
+    font-size: 28px;
+    line-height: 32px;
   }
 
   .homepage-nav-links {
