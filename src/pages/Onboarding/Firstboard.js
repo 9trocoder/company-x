@@ -13,6 +13,10 @@ function Firstboard() {
   const handleClick = (e) => {
     navigate("/signup", { state: { email: email } });
   };
+
+  const handleLoginClick = (e) => { 
+    navigate("/login");
+  }
   return (
     <>
       <div className="firstboardcnt">
@@ -39,7 +43,7 @@ function Firstboard() {
                 Get Started
               </button>
           </form>
-          <p className="alreadybtn">
+          <p className="alreadybtn" onClick={() => handleLoginClick()}>
             Already have an account ? <span>Log In</span>
           </p>
         </div>
