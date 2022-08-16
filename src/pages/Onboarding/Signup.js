@@ -34,7 +34,7 @@ function Signup() {
         </div>
 
         <form action="" className="signup-form">
-          <input className="firstboard-input" type="text" value={email} />
+          <input className="firstboard-input" type="text" placeholder="Your email address" value={email} />
           <input
             className="firstboard-input"
             type="text"

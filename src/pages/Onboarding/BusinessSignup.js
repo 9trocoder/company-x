@@ -42,7 +42,7 @@ function BusinessSignup() {
             type="text"
             placeholder="Your full name*"
           />
-          <input className="firstboard-input" type="text" value={email} />
+          <input className="firstboard-input" placeholder="Your email address" type="text" value={email} />
           <input
             className="firstboard-input"
             type="password"

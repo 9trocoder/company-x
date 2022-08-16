@@ -1,15 +1,15 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
-  const [email, setEmail] = React.useState('');
+  const [email, setEmail] = React.useState("");
   let navigate = useNavigate();
-  const handleBusinessClick = (e) => {
-    navigate("/signup/business", { state: { email: email } });
+  const handleSignupClick = (e) => {
+    navigate("/signup", { state: { email: email } });
   };
   return (
     <>
-    <div className="signup-container">
+      <div className="signup-container">
         <div className="gobackbtn" onClick={() => navigate(-1)}>
           <svg
             width="20"
@@ -32,7 +32,11 @@ function Login() {
         </div>
 
         <form action="" className="signup-form">
-          <input className="firstboard-input" type="text" placeholder='Your email address*'  />
+          <input
+            className="firstboard-input"
+            type="text"
+            placeholder="Your email address*"
+          />
           <input
             className="firstboard-input"
             type="password"
@@ -47,13 +51,13 @@ function Login() {
           </div>
 
           <button className="firstboard-button">Log In</button>
-          <p className="alreadybtn" onClick={() => handleBusinessClick()}>
-          Don't have an account?  <span>Sign up </span>
+          <p className="alreadybtn" onClick={() => handleSignupClick()}>
+            Don't have an account? <span>Sign up </span>
           </p>
         </form>
       </div>
     </>
-  )
+  );
 }
 
-export default Login
+export default Login;
