@@ -11,9 +11,8 @@ function Signup() {
   };
   return (
     <>
-    
       <div className="signup-container">
-      <div className="gobackbtn" onClick={() => navigate(-1)}>
+        <div className="gobackbtn" onClick={() => navigate(-1)}>
           <svg
             width="20"
             height="20"

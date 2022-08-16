@@ -6,6 +6,7 @@ function BusinessSignup() {
   const { state } = useLocation();
   let navigate = useNavigate();
   const { email } = state;
+
   return (
     <>
       <div className="signup-container">
@@ -56,10 +57,6 @@ function BusinessSignup() {
           </div>
 
           <button className="firstboard-button">Create account</button>
-          <p className="alreadybtn">
-            Not looking for an Organizational account?{" "}
-            <span>Sign up for a personal account </span>
-          </p>
         </form>
       </div>
     </>

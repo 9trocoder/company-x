@@ -32,7 +32,8 @@
     font-size: 12px;
     cursor: pointer;
     text-align: center;
-
+    text-decoration: none;
+    color: inherit;
   }
 
   .alreadybtn span {
