@@ -1,29 +1,27 @@
 import React from "react";
-import { useNavigate, useLocation } from "react-router-dom";
-import "./Signup.css";
+import { useLocation } from "react-router-dom";
 
-function Signup() {
+function BusinessSignup() {
   const { state } = useLocation();
-  let navigate = useNavigate();
   const { email } = state;
-  const handleBusinessClick = (e) => {
-    navigate("/signup/business", { state: { email: email } });
-  };
   return (
     <>
       <div className="signup-container">
         <div className="signup-container-txt">
-          <h1 className="signup-txtheader">Sign Up</h1>
-          <p className="signup-cnt-text">Required fields have an asterisk:*</p>
+          <h1 className="signup-txtheader">Create your Organization account</h1>
+          <p className="signup-cnt-text">
+            Before setting up your organization, create your C-X business
+            account.
+          </p>
         </div>
 
         <form action="" className="signup-form">
-          <input className="firstboard-input" type="text" value={email} />
           <input
             className="firstboard-input"
             type="text"
             placeholder="Your full name*"
           />
+          <input className="firstboard-input" type="text" value={email} />
           <input
             className="firstboard-input"
             type="password"
@@ -37,9 +35,10 @@ function Signup() {
             </p>
           </div>
 
-          <button className="firstboard-button">Sign Up</button>
-          <p className="alreadybtn" onClick={() => handleBusinessClick()}>
-            <span>Sign up </span>as Organization
+          <button className="firstboard-button">Create account</button>
+          <p className="alreadybtn">
+            Not looking for an Organizational account?{" "}
+            <span>Sign up for a personal account </span>
           </p>
         </form>
       </div>
@@ -47,4 +46,4 @@ function Signup() {
   );
 }
 
-export default Signup;
+export default BusinessSignup;
