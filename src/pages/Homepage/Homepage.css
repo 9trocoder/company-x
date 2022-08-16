@@ -1,61 +1,60 @@
 @media screen and (max-width: 500px) {
-    .homepagecnt {
-        padding: 15px 20px;
-        
-    }
+  .homepagecnt {
+    padding: 15px 20px;
+  }
 
-    .homepage-nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 15px 20px;
-        background-color: white;
-        position: fixed;
-        width: 100%;
-    }
+  .homepage-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+  }
 
-    .homepage-nav-links {
-        display: flex;
-        gap: 2rem;
-        align-items: center;
-        
-    }
+  .homepage-nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
 
-    .homepage-nav-chat {
-        position: relative;
-        display: flex; 
-        flex-direction: column;
-    }
+  .hompage-nav-chat {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 
-    .hompage-nav-chat svg {
-        width: 35px;
-        height: 35px;
-        fill: #6055ef
-    }
+  .hompage-nav-chat svg {
+    width: 35px;
+    height: 35px;
+    fill: #6055ef;
+  }
 
-    .homechatntf {
-        position: absolute;
-        top: 20px;
-        background-color: #6055ef;
-        width: 20px;
-        height: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 9999px;
-        color: #fff;
-    }
+  .homechatntf {
+    position: absolute;
 
-    .homechatntf p {
-        font-size: 12px;
-        font-weight: bold;
-        color: #fff;
-    }
+    background-color: #6055ef;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    color: #fff;
+  }
 
-    .homepage-profile img{
-        width: 40px;
-        height: 40px;
-        object-fit: cover;
-        border-radius: 9999px;
-    }
+  .homechatntf p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .homepage-profile img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 9999px;
+  }
 }
