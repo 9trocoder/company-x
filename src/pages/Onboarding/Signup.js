@@ -9,6 +9,10 @@ function Signup() {
   const handleBusinessClick = (e) => {
     navigate("/signup/business", { state: { email: email } });
   };
+
+  const handleSubmitVerification = (e) => {
+    navigate("/verify-email", { state: { email: email } });
+  }
   return (
     <>
       <div className="signup-container">
@@ -33,27 +37,31 @@ function Signup() {
           <p className="signup-cnt-text">Fill in your credentials below.</p>
         </div>
 
-        <form action="" className="signup-form">
-          <input className="firstboard-input" type="text" placeholder="Your email address" value={email} />
+        <form action="" onSubmit={handleSubmitVerification} className="signup-form">
+          <input className="firstboard-input" type="text" placeholder="Your email address" value={email}
+          required
+          />
           <input
             className="firstboard-input"
             type="text"
+            required
             placeholder="Your full name"
           />
           <input
             className="firstboard-input"
             type="password"
+            required
             placeholder="Your password"
           />
 
           <div className="checkbox">
-            <input type="checkbox" />
+            <input type="checkbox" required />
             <p>
               I Agree to the User Agreement, and acknowledge the Privacy Policy.
             </p>
           </div>
 
-          <button className="firstboard-button">Sign Up</button>
+          <button type="submit" className="firstboard-button">Sign Up</button>
           <p className="alreadybtn" onClick={() => handleBusinessClick()}>
             <span>Sign up </span>as Organization
           </p>

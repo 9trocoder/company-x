@@ -7,6 +7,10 @@ function BusinessSignup() {
   let navigate = useNavigate();
   const { email } = state;
 
+  const handleSubmitVerification = (e) => {
+    navigate("/verify-email", { state: { email: email } });
+  }
+
   return (
     <>
       <div className="signup-container">
@@ -36,27 +40,30 @@ function BusinessSignup() {
           </p>
         </div>
 
-        <form action="" className="signup-form">
+        <form onSubmit={handleSubmitVerification} action="" className="signup-form">
           <input
             className="firstboard-input"
             type="text"
+            required
             placeholder="Your full name"
           />
-          <input className="firstboard-input" placeholder="Your email address" type="text" value={email} />
+          <input className="firstboard-input" 
+          required placeholder="Your email address" type="text" value={email} />
           <input
             className="firstboard-input"
+            required
             type="password"
             placeholder="Your password"
           />
 
           <div className="checkbox">
-            <input type="checkbox" />
+            <input type="checkbox" required />
             <p>
               I Agree to the User Agreement, and acknowledge the Privacy Policy.
             </p>
           </div>
 
-          <button className="firstboard-button">Create account</button>
+          <button type="submit" className="firstboard-button">Create account</button>
         </form>
       </div>
     </>
