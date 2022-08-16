@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./BusinessSignup.css";
 
 function BusinessSignup() {
+  const [password, setPassword] = useState("");
+  const [poorPassword, setPoorPassword] = useState(false);
+  const [weakPassword, setWeakPassword] = useState(false);
+  const [strongPassword, setStrongPassword] = useState(false);
+  const [passwordError, setPasswordError] = useState("");
   const { state } = useLocation();
   let navigate = useNavigate();
   const { email } = state;
@@ -10,6 +15,59 @@ function BusinessSignup() {
   const handleSubmitVerification = (e) => {
     navigate("/verify-email", { state: { email: email } });
   }
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const passwordStrength = (e) => {
+    const passwordValue = e.target.value;
+    const passwordLength = passwordValue.length;
+    const poorRegExp = /[a-z]/;
+    const weakRegExp = /(?=.*?[0-9])/;
+    const strongRegExp = /(?=.*?[#?!@$%^&*-])/;
+    const whitespaceRegExp = /^$|\s+/;
+    const poorPassword = poorRegExp.test(passwordValue);
+    const weakPassword = weakRegExp.test(passwordValue);
+    const strongPassword = strongRegExp.test(passwordValue);
+    const whiteSpace = whitespaceRegExp.test(passwordValue);
+
+    if (passwordValue === "") {
+      setPasswordError("Password is required");
+    } else {
+      if (whiteSpace) {
+        setPasswordError("Password cannot contain whitespace");
+      }
+      if (
+        passwordLength <= 3 &&
+        (poorPassword || weakPassword || strongPassword)
+      ) {
+        setPoorPassword(true);
+        setPasswordError("Password is poor");
+      }
+      if (
+        passwordLength >= 4 &&
+        poorPassword &&
+        (weakPassword || strongPassword)
+      ) {
+        setWeakPassword(true);
+        setPasswordError("Password is Weak");
+      } else {
+        setWeakPassword(false);
+      }
+      if (
+        passwordLength >= 6 &&
+        poorPassword &&
+        weakPassword &&
+        strongPassword
+      ) {
+        setStrongPassword(true);
+        setPasswordError("Password is Strong");
+      } else {
+        setStrongPassword(false);
+      }
+    }
+  };
 
   return (
     <>
@@ -49,12 +107,35 @@ function BusinessSignup() {
           />
           <input className="firstboard-input" 
           required placeholder="Your email address" type="text" value={email} />
-          <input
+           <input
             className="firstboard-input"
-            required
             type="password"
+            onChange={handlePasswordChange}
+            value={password}
+            onInput={passwordStrength}
+            name="password"
+            required
             placeholder="Your password"
           />
+
+          <div className="passwordstrengthmeter">
+            {poorPassword === true ? (
+              <div className="strengthlength stlpoor"></div>
+            ) : (
+              ""
+            )}
+            {weakPassword === true ? (
+              <div className="strengthlength stlweak"></div>
+            ) : (
+              ""
+            )}
+            {strongPassword === true ? (
+              <div className="strengthlength stlstrong"></div>
+            ) : (
+              ""
+            )}
+          </div>
+          <p className="passwordinfo">{passwordError}</p>
 
           <div className="checkbox">
             <input type="checkbox" required />
