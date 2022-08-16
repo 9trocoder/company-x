@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+import Homepage from "./pages/Homepage/Homepage";
 import BusinessSignup from "./pages/Onboarding/BusinessSignup";
 import EmailVerification from "./pages/Onboarding/EmailVerification";
 import Firstboard from "./pages/Onboarding/Firstboard";
@@ -17,6 +18,7 @@ function App() {
         <Route path="/signup/business" element={<BusinessSignup />} />
         <Route path="/verify-email" element={<EmailVerification />} />
         <Route path="/recovery-password" element={<RecoveryPassword/>} />
+        <Route path="/home" element={<Homepage />} />
       </Routes>
     </BrowserRouter>
   );

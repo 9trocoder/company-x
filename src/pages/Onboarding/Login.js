@@ -8,6 +8,9 @@ function Login() {
   const handleSignupClick = (e) => {
     navigate("/signup", { state: { email: email } });
   };
+  const handleLogin = (e) => {
+    navigate("/home")
+  }
   return (
     <>
       <div className="signup-container">
@@ -32,7 +35,9 @@ function Login() {
           <p className="signup-cnt-text">Fill in your credentials to log in</p>
         </div>
 
-        <form action="" className="signup-form">
+        <form action="" 
+        onSubmit={handleLogin}
+        className="signup-form">
           <input
             className="firstboard-input"
             type="text"

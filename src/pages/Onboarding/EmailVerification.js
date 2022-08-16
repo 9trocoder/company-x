@@ -28,7 +28,9 @@ function EmailVerification() {
         </div>
         <h1 className="firstboard-header">Let's go</h1>
         <p>We just emailed you at <span>{email}</span>, Kindly verify your email address</p>
-        <button className="firstboard-button">Resend Email Verification</button>
+        <button 
+        onClick={() => navigate("/home")}
+        className="firstboard-button">Resend Email Verification</button>
       </div>
     </>
   );
