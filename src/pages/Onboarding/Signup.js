@@ -38,12 +38,12 @@ function Signup() {
           <input
             className="firstboard-input"
             type="text"
-            placeholder="Your full name*"
+            placeholder="Your full name"
           />
           <input
             className="firstboard-input"
             type="password"
-            placeholder="Your password*"
+            placeholder="Your password"
           />
 
           <div className="checkbox">
