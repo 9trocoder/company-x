@@ -1,13 +1,8 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
-import "./Login.css"
+import { useNavigate } from "react-router-dom";
 
-function Login() {
-  const [email, setEmail] = React.useState("");
+function RecoveryPassword() {
   let navigate = useNavigate();
-  const handleSignupClick = (e) => {
-    navigate("/signup", { state: { email: email } });
-  };
   return (
     <>
       <div className="signup-container">
@@ -28,36 +23,24 @@ function Login() {
           </svg>
         </div>
         <div className="signup-container-txt">
-          <h1 className="signup-txtheader">Log In</h1>
-          <p className="signup-cnt-text">Fill in your credentials to log in</p>
+          <h1 className="signup-txtheader">Recover your password</h1>
+          <p className="signup-cnt-text">
+            Enter your email to recover your password.
+          </p>
         </div>
 
         <form action="" className="signup-form">
           <input
             className="firstboard-input"
             type="text"
-            required
-            placeholder="Your email address*"
-          />
-          <input
-            className="firstboard-input"
-            type="password"
-            required
-            placeholder="Your password*"
+            placeholder="Your email address"
           />
 
-          <Link to="/recovery-password" className="forgotpassword">Forgot password ?</Link>
-
-          <button 
-          type="submit"
-          className="firstboard-button">Log In</button>
-          <p className="alreadybtn" onClick={() => handleSignupClick()}>
-            Don't have an account? <span>Sign up </span>
-          </p>
+          <button className="firstboard-button">Recover Password</button>
         </form>
       </div>
     </>
   );
 }
 
-export default Login;
+export default RecoveryPassword;
