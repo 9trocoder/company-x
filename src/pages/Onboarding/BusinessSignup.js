@@ -8,7 +8,7 @@ function BusinessSignup() {
     <>
       <div className="signup-container">
         <div className="signup-container-txt">
-          <h1 className="signup-txtheader">Create your Organization account</h1>
+          <h1 className="signup-txtheader">Create your <br /> Organization account</h1>
           <p className="signup-cnt-text">
             Before setting up your organization, create your C-X business
             account.
