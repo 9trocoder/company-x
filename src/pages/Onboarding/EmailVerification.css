@@ -9,4 +9,8 @@
     margin-bottom: 2rem;
     margin-top: 0.2rem;
   }
+
+  .verifyemailbody span {
+    color: #6055ef;
+  }
 }
