@@ -40,13 +40,13 @@ function BusinessSignup() {
           <input
             className="firstboard-input"
             type="text"
-            placeholder="Your full name*"
+            placeholder="Your full name"
           />
           <input className="firstboard-input" placeholder="Your email address" type="text" value={email} />
           <input
             className="firstboard-input"
             type="password"
-            placeholder="Your password*"
+            placeholder="Your password"
           />
 
           <div className="checkbox">

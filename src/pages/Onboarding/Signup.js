@@ -30,7 +30,7 @@ function Signup() {
         </div>
         <div className="signup-container-txt">
           <h1 className="signup-txtheader">Sign Up</h1>
-          <p className="signup-cnt-text">Required fields have an asterisk:*</p>
+          <p className="signup-cnt-text">Fill in your credentials below.</p>
         </div>
 
         <form action="" className="signup-form">
