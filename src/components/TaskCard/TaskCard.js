@@ -118,10 +118,7 @@ const CardDesam = ({ i, x, y, rot, scale, trans, bind, cards }) => {
               <p>{taskDescription}</p>
               <p>{taskProgressCount}</p>
             </div>
-          Setup Profile
-3/4 is completed
 
-75
       </animated.div>
     </animated.div>
   );
