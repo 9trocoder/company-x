@@ -112,13 +112,15 @@ const CardDesam = ({ i, x, y, rot, scale, trans, bind, cards }) => {
         {...bind(i)}
         style={{ transform: interpolate([rot, scale], trans) }}
       >
-        
-            <div className="nameam">
-              <h1>{taskName}</h1>
-              <p>{taskDescription}</p>
-              <p>{taskProgressCount}</p>
-            </div>
-
+        <div className="nameam">
+          <h1>{taskName}</h1>
+          <p>{taskDescription}</p>
+          <div className="dtask">
+            <div 
+            style={{width: `${taskProgressCount}%`}}
+            className="dtaskprogress"></div>
+          </div>
+        </div>
       </animated.div>
     </animated.div>
   );
