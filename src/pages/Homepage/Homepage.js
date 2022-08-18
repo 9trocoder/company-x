@@ -1,4 +1,6 @@
 import React from "react";
+import CardDeck from "../../components/CardDeck/CardDeck";
+import TaskCard from "../../components/TaskCard/TaskCard";
 
 import "./Homepage.css";
 let proifilepic =
@@ -47,7 +49,8 @@ function Homepage() {
           Hello <br />
           Oladimeji Adeyemi 👋
         </h1>
-        
+        {/* <CardDeck /> */}
+        <TaskCard />
       </div>
     </>
   );
