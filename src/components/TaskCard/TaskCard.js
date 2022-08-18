@@ -3,35 +3,33 @@ import { useSprings, animated, to as interpolate } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
 import "./TaskCard.css";
 
-const cards = {
-  carditems: [
-    {
-      taskName: "Progress Task Progress",
-      taskDescription: "3/5 is completed",
-      taskProgressCount: 68,
-    },
-    {
-      taskName: "Registration",
-      taskDescription: "3/4 is completed",
-      taskProgressCount: 75,
-    },
-    {
-      taskName: "Invite 5 Members",
-      taskDescription: "2/5 is completed",
-      taskProgressCount: 50,
-    },
-    {
-      taskName: "Setup Profile",
-      taskDescription: "3/4 is completed",
-      taskProgressCount: 75,
-    },
-    {
-      taskName: "PComplete Workspace",
-      taskDescription: "3/5 is completed",
-      taskProgressCount: 69,
-    },
-  ],
-};
+const cards = [
+  {
+    taskName: "Progress Task Progress",
+    taskDescription: "3/5 is completed",
+    taskProgressCount: 68,
+  },
+  {
+    taskName: "Registration",
+    taskDescription: "3/4 is completed",
+    taskProgressCount: 75,
+  },
+  {
+    taskName: "Invite 5 Members",
+    taskDescription: "2/5 is completed",
+    taskProgressCount: 50,
+  },
+  {
+    taskName: "Setup Profile",
+    taskDescription: "3/4 is completed",
+    taskProgressCount: 75,
+  },
+  {
+    taskName: "PComplete Workspace",
+    taskDescription: "3/5 is completed",
+    taskProgressCount: 69,
+  },
+];
 
 const to = (i) => ({
   x: 0,
@@ -48,7 +46,7 @@ const trans = (r, s) =>
 
 function TaskCard() {
   const [gone] = useState(() => new Set());
-  const [props, api] = useSprings(cards.carditems.length, (i) => ({
+  const [props, api] = useSprings(cards.length, (i) => ({
     ...to(i),
     from: from(i),
   }));
@@ -79,7 +77,7 @@ function TaskCard() {
           config: { friction: 50, tension: active ? 800 : isGone ? 200 : 500 },
         };
       });
-      if (!active && gone.size === cards.carditems.length) {
+      if (!active && gone.size === cards.length) {
         setTimeout(() => {
           gone.clear();
           api.start((i) => to(i));
@@ -88,27 +86,45 @@ function TaskCard() {
     }
   );
   return (
-    <>
+    <div className="oma">
       {props.map(({ x, y, rot, scale }, i) => (
-        <animated.div className="deck" key={i} style={{ x, y }}>
-          <animated.div
-            {...bind(i)}
-            style={{ transform: interpolate([rot, scale], trans) }}
-          >
-            {cards.carditems.map((cardam, key) => {
-              return (
-                <div className="nameam">
-                  <h1>{cardam.taskName}</h1>
-                  <p>{cardam.taskDescription}</p>
-                  <p>{cardam.taskProgressCount}</p>
-                </div>
-              );
-            })}
-          </animated.div>
-        </animated.div>
+        <CardDesam
+          i={i}
+          x={x}
+          y={y}
+          rot={rot}
+          scale={scale}
+          trans={trans}
+          cards={cards}
+          bind={bind}
+        />
       ))}
-    </>
+    </div>
   );
 }
+
+const CardDesam = ({ i, x, y, rot, scale, trans, bind, cards }) => {
+  const { taskName, taskDescription, taskProgressCount } = cards[i];
+
+  return (
+    <animated.div className="deck" key={i} style={{ x, y }}>
+      <animated.div
+        {...bind(i)}
+        style={{ transform: interpolate([rot, scale], trans) }}
+      >
+        
+            <div className="nameam">
+              <h1>{taskName}</h1>
+              <p>{taskDescription}</p>
+              <p>{taskProgressCount}</p>
+            </div>
+          Setup Profile
+3/4 is completed
+
+75
+      </animated.div>
+    </animated.div>
+  );
+};
 
 export default TaskCard;
