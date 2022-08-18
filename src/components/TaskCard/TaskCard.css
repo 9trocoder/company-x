@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     
+    
 }
 .deck {
     position: absolute;
@@ -18,8 +19,9 @@
 
 .deck > div {
     touch-action: none;
-    background-color: #FFDEE9;
-    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    background-color: #fff;
+    /* background-color: #FFDEE9; */
+    /* background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%); */
     
     
     width: 45vh;
