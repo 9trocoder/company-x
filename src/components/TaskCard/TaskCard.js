@@ -25,7 +25,7 @@ const cards = [
     taskProgressCount: 75,
   },
   {
-    taskName: "PComplete Workspace",
+    taskName: "Complete Workspace",
     taskDescription: "3/5 is completed",
     taskProgressCount: 69,
   },
