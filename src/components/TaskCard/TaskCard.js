@@ -86,7 +86,7 @@ function TaskCard() {
     }
   );
   return (
-    <div className="oma">
+    <div className="omalay">
       {props.map(({ x, y, rot, scale }, i) => (
         <CardDesam
           i={i}
