@@ -50,6 +50,7 @@
   height: 10px;
   border-radius: 8px;
   background-color: #f5f5f7;
+  
 }
 
 .dtaskprogress {
@@ -60,5 +61,12 @@
 
 .nameam p {
     font-size: 12px;
-    margin-bottom: .5rem;
+}
+
+.dtasktypo {
+    margin-top: .4rem;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+
 }

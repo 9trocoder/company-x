@@ -115,10 +115,14 @@ const CardDesam = ({ i, x, y, rot, scale, trans, bind, cards }) => {
         <div className="nameam">
           <h1>{taskName}</h1>
           <p>{taskDescription}</p>
-          <div className="dtask">
-            <div 
-            style={{width: `${taskProgressCount}%`}}
-            className="dtaskprogress"></div>
+          <div className="dtasktypo">
+            <div className="dtask">
+              <div
+                style={{ width: `${taskProgressCount}%` }}
+                className="dtaskprogress"
+              ></div>
+            </div>
+            <p>{taskProgressCount}%</p>
           </div>
         </div>
       </animated.div>
