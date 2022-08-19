@@ -52,8 +52,8 @@ function Homepage() {
         </h1>
         <div className="homepageheader">
           <div className="homepageheader-buttons">
-            <div className="overviewbtn">Overview</div>
-            <div className="productivitybtn">Productivity</div>
+            <button className="overviewbtn">Overview</button>
+            <button className="productivitybtn">Productivity</button>
           </div>
           <div className="filterbutton">
             <svg
