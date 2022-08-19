@@ -11,7 +11,6 @@
   .homepagecnt {
     padding: 12px 20px;
     padding-top: 4rem;
-    position: relative;
   }
 
   .homepagewelcometxt {
@@ -69,6 +68,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px 0;
+    margin-top: .5rem;
   }
 
   .homepageheader-buttons {

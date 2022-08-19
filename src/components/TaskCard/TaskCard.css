@@ -4,10 +4,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;margin-top: 7rem;
   }
   .deck {
     position: absolute;
-    margin-top: 14rem;
+    
     width: 300px;
     height: 200px;
     will-change: transform;
