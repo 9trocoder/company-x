@@ -10,7 +10,8 @@
   }
   .homepagecnt {
     padding: 12px 20px;
-    padding-top: 4rem
+    padding-top: 4rem;
+    position: relative;
   }
 
   .homepagewelcometxt {
