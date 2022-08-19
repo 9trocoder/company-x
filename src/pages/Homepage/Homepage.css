@@ -63,4 +63,27 @@
     object-fit: cover;
     border-radius: 9999px;
   }
+
+  .homepageheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+  .homepageheader-buttons {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  .homepageheader-buttons div {
+    /* background-color: #6055ef; */
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 9999px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    cursor: pointer;
+  }
 }
