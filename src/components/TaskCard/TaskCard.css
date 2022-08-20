@@ -24,8 +24,8 @@
     /* background-color: #FFDEE9; */
     /* background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%); */
 
-    width: 45vh;
-    max-width: 300px;
+    width: 95vw;
+    max-width: 400px;
     height: 18vh;
     max-height: 200px;
     will-change: transform;
