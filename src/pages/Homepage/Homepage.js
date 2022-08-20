@@ -25,7 +25,7 @@ const arrowright = (
 
 function Homepage() {
   return (
-    <>
+    <div className="homepagebody">
       <nav className="homepage-nav">
         <div className="homepage-nav-logo">
           <svg
@@ -133,7 +133,9 @@ function Homepage() {
           </div>
         </div>
       </div>
-    </>
+
+      <div className="bottomnav"></div>
+    </div>
   );
 }
 
