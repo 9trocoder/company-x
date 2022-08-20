@@ -161,13 +161,29 @@
     background-color: #1a1a22;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    padding: 0 20px;
+    justify-content: space-between;
     
   }
 
+  .bottomnav-itemhere {
+    background-color: #6055ef;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bottomnav-itemhere svg {
+    width: 20px;
+    height: 20px;
+  }
+
   .bottomnav-item svg{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
 
  
