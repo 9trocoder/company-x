@@ -7,13 +7,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 20px;
+    padding: 12px 10px;
     background-color: #f3f6ff;
     position: fixed;
     width: 100%;
   }
   .homepagecnt {
-    padding: 12px 20px;
+    padding: 12px 10px;
     padding-top: 4rem;
   }
 
