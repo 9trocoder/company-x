@@ -109,7 +109,7 @@
     background-color: #fff;
     border-radius: 10px;
     padding: 8px 10px 8px 8px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
   }
 
   .tasklista-item-left {
