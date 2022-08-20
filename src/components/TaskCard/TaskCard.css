@@ -6,7 +6,6 @@
     justify-content: center;
     position: relative;
     margin-top: 7rem;
-    width: 100%;
   }
   .deck {
     position: absolute;
@@ -26,8 +25,8 @@
     /* background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%); */
 
     width: 100%;
-    max-width: 100%;
-    height: 18vh;
+    max-width: 450px;
+    height: 20vh;
     max-height: 200px;
     will-change: transform;
     padding: 20px 20px;
