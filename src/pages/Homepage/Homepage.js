@@ -133,7 +133,7 @@ function Homepage() {
       </div>
 
       <div className="bottomnav">
-        <div className="bottomnav-item">
+        <div className="bottomnav-item wherenav">
           <svg
             width="15"
             height="15"
