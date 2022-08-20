@@ -97,5 +97,8 @@
 
   .tasklista {
     margin-top: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 }
