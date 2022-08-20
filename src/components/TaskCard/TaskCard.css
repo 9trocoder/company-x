@@ -10,7 +10,7 @@
   .deck {
     position: absolute;
 
-    width: 100%;
+    width: 300px;
     /* height: 200px; */
     will-change: transform;
     display: flex;
@@ -24,14 +24,14 @@
     /* background-color: #FFDEE9; */
     /* background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%); */
 
-    width: 100%;
-    max-width: 450px;
-    height: 20vh;
+    width: 95vw;
+    max-width: 400px;
+    height: 18vh;
     max-height: 200px;
     will-change: transform;
     padding: 20px 20px;
     display: flex;
-    border-radius: 10px;
+    border-radius: 5px;
     /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
       rgba(0, 0, 0, 0.08) 0px 0px 0px 0.5px; */
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
