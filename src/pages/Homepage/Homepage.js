@@ -6,8 +6,24 @@ import "./Homepage.css";
 let proifilepic =
   "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=417&q=80";
 
+const arrowright = (
+  <svg
+    width="15"
+    height="15"
+    viewBox="0 0 15 15"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M6.1584 3.13508C6.35985 2.94621 6.67627 2.95642 6.86514 3.15788L10.6151 7.15788C10.7954 7.3502 10.7954 7.64949 10.6151 7.84182L6.86514 11.8418C6.67627 12.0433 6.35985 12.0535 6.1584 11.8646C5.95694 11.6757 5.94673 11.3593 6.1356 11.1579L9.565 7.49985L6.1356 3.84182C5.94673 3.64036 5.95694 3.32394 6.1584 3.13508Z"
+      fill="currentColor"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+    ></path>
+  </svg>
+);
+
 function Homepage() {
-  
   return (
     <>
       <nav className="homepage-nav">
@@ -74,6 +90,48 @@ function Homepage() {
         </div>
         {/* <CardDeck /> */}
         <TaskCard />
+        <div className="tasklista">
+          <div className="tasklista-item">
+            <div className="tasklista-item-left">
+              <div className="tasklista-itemimage"></div>
+              <p className="tasklista-itemcate">Total Task</p>
+            </div>
+            <div className="tasklista-item-right">
+              <div className="tasklista-item-right-number">16</div>
+              <div className="tasklista-item-right-arrow">{arrowright}</div>
+            </div>
+          </div>
+          <div className="tasklista-item">
+            <div className="tasklista-item-left">
+              <div className="tasklista-itemimage"></div>
+              <p className="tasklista-itemcate">In Progress</p>
+            </div>
+            <div className="tasklista-item-right">
+              <div className="tasklista-item-right-number">20</div>
+              <div className="tasklista-item-right-arrow">{arrowright}</div>
+            </div>
+          </div>
+          <div className="tasklista-item">
+            <div className="tasklista-item-left">
+              <div className="tasklista-itemimage"></div>
+              <p className="tasklista-itemcate">Completed</p>
+            </div>
+            <div className="tasklista-item-right">
+              <div className="tasklista-item-right-number">32</div>
+              <div className="tasklista-item-right-arrow">{arrowright}</div>
+            </div>
+          </div>
+          <div className="tasklista-item">
+            <div className="tasklista-item-left">
+              <div className="tasklista-itemimage"></div>
+              <p className="tasklista-itemcate">Total Projects</p>
+            </div>
+            <div className="tasklista-item-right">
+              <div className="tasklista-item-right-number">8</div>
+              <div className="tasklista-item-right-arrow">{arrowright}</div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
