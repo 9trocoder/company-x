@@ -100,7 +100,7 @@ function Homepage() {
               <div className="tasklista-item-right-number">16</div>
               <div className="tasklista-item-right-arrow">{arrowright}</div>
             </div>
-          </div>
+          </div> 
           <div className="tasklista-item">
             <div className="tasklista-item-left">
               <div className="tasklista-itemimage"></div>
