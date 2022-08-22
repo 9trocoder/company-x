@@ -196,11 +196,11 @@
   .bottomnavshow {
     position: absolute;
     margin-top: 1rem;
-    bottom: -115px;
-    width: 40px;
+    bottom: -125px;
+    width: 30px;
     height: 90px;
     background-color: #6055ef;
-    border-radius: 999px;
+    border-radius: 8px;
   }
 
  
