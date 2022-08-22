@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import CardDeck from "../../components/CardDeck/CardDeck";
 import TaskCard from "../../components/TaskCard/TaskCard";
 
@@ -24,6 +24,10 @@ const arrowright = (
 );
 
 function Homepage() {
+  const [overview, setOverview] = useState(true);
+  const [overviewBtn, setOverviewBtn] = useState("#6055ef");
+  const [productivityBtn, setProductivityBtn] = useState("");
+  const [productivity, setProductivity] = useState(false);
   return (
     <div className="homepagebody">
       <nav className="homepage-nav">
@@ -67,8 +71,29 @@ function Homepage() {
         </h1>
         <div className="homepageheader">
           <div className="homepageheader-buttons">
-            <button className="overviewbtn">Overview</button>
-            <button className="productivitybtn">Productivity</button>
+            <button
+              className="overviewbtn"
+              style={{ backgroundColor: `${overviewBtn}` }}
+              onClick={() => {
+                setOverview(true);
+                setOverviewBtn("#6055ef");
+                setProductivity(false);
+                setProductivityBtn("");
+              }}
+            >
+              Overview
+            </button>
+            <button
+              className="productivitybtn"
+              style={{ backgroundColor: `${productivityBtn}` }}
+              onClick={() => {
+                setProductivityBtn("#6055ef");
+                setOverview(false);
+                setOverviewBtn("");
+              }}
+            >
+              Productivity
+            </button>
           </div>
           <div className="filterbutton">
             <svg
@@ -87,49 +112,55 @@ function Homepage() {
           </div>
         </div>
         {/* <CardDeck /> */}
-        <TaskCard />
-        <div className="tasklista">
-          <div className="tasklista-item">
-            <div className="tasklista-item-left">
-              <div className="tasklista-itemimage"></div>
-              <p className="tasklista-itemcate">Total Task</p>
-            </div>
-            <div className="tasklista-item-right">
-              <div className="tasklista-item-right-number">16</div>
-              <div className="tasklista-item-right-arrow">{arrowright}</div>
+
+        {overview && (
+          <div className="homepage-overviews">
+            <TaskCard />
+            <div className="tasklista">
+              <div className="tasklista-item">
+                <div className="tasklista-item-left">
+                  <div className="tasklista-itemimage"></div>
+                  <p className="tasklista-itemcate">Total Task</p>
+                </div>
+                <div className="tasklista-item-right">
+                  <div className="tasklista-item-right-number">16</div>
+                  <div className="tasklista-item-right-arrow">{arrowright}</div>
+                </div>
+              </div>
+              <div className="tasklista-item">
+                <div className="tasklista-item-left">
+                  <div className="tasklista-itemimage"></div>
+                  <p className="tasklista-itemcate">In Progress</p>
+                </div>
+                <div className="tasklista-item-right">
+                  <div className="tasklista-item-right-number">20</div>
+                  <div className="tasklista-item-right-arrow">{arrowright}</div>
+                </div>
+              </div>
+              <div className="tasklista-item">
+                <div className="tasklista-item-left">
+                  <div className="tasklista-itemimage"></div>
+                  <p className="tasklista-itemcate">Completed</p>
+                </div>
+                <div className="tasklista-item-right">
+                  <div className="tasklista-item-right-number">32</div>
+                  <div className="tasklista-item-right-arrow">{arrowright}</div>
+                </div>
+              </div>
+              <div className="tasklista-item">
+                <div className="tasklista-item-left">
+                  <div className="tasklista-itemimage"></div>
+                  <p className="tasklista-itemcate">Total Projects</p>
+                </div>
+                <div className="tasklista-item-right">
+                  <div className="tasklista-item-right-number">8</div>
+                  <div className="tasklista-item-right-arrow">{arrowright}</div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="tasklista-item">
-            <div className="tasklista-item-left">
-              <div className="tasklista-itemimage"></div>
-              <p className="tasklista-itemcate">In Progress</p>
-            </div>
-            <div className="tasklista-item-right">
-              <div className="tasklista-item-right-number">20</div>
-              <div className="tasklista-item-right-arrow">{arrowright}</div>
-            </div>
-          </div>
-          <div className="tasklista-item">
-            <div className="tasklista-item-left">
-              <div className="tasklista-itemimage"></div>
-              <p className="tasklista-itemcate">Completed</p>
-            </div>
-            <div className="tasklista-item-right">
-              <div className="tasklista-item-right-number">32</div>
-              <div className="tasklista-item-right-arrow">{arrowright}</div>
-            </div>
-          </div>
-          <div className="tasklista-item">
-            <div className="tasklista-item-left">
-              <div className="tasklista-itemimage"></div>
-              <p className="tasklista-itemcate">Total Projects</p>
-            </div>
-            <div className="tasklista-item-right">
-              <div className="tasklista-item-right-number">8</div>
-              <div className="tasklista-item-right-arrow">{arrowright}</div>
-            </div>
-          </div>
-        </div>
+        )}
+        {productivity && <div className="homepage-productivity"></div>}
       </div>
 
       <div className="bottomnav">
