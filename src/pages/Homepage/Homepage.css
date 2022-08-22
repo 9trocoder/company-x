@@ -162,7 +162,6 @@
     align-items: center;
     padding: 0 20px;
     justify-content: space-between;
-    
   }
 
   .bottomnav-itemhere {
@@ -180,7 +179,7 @@
     height: 20px;
   }
 
-  .bottomnav-item svg{
+  .bottomnav-item svg {
     width: 30px;
     height: 30px;
   }
@@ -188,7 +187,7 @@
   .wherenav {
     display: flex;
     flex-direction: column;
-    
+
     align-items: center;
     position: relative;
   }
@@ -203,7 +202,51 @@
     border-radius: 8px;
   }
 
- 
+  .homepage-productivity {
+    margin-top: 1rem;
+  }
 
+  @keyframes growProgressBar {
+    0%,
+    33% {
+      --pgPercentage: 0;
+    }
+    100% {
+      --pgPercentage: var(--productvalue);
+    }
+  }
 
+  @property --pgPercentage {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 0;
+  }
+
+  div[role="progressbar"] {
+    --size: 12rem;
+    --fg: rgb(61, 170, 94);
+    --bg: #def;
+    --pgPercentage: var(--productvalue);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(
+        closest-side,
+        white 80%,
+        transparent 0 99.9%,
+        white 0
+      ),
+      conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: #6055ef;
+  }
+
+  div[role="progressbar"]::before {
+    counter-reset: percentage var(--productvalue);
+    content: counter(percentage) "%";
+  }
 }

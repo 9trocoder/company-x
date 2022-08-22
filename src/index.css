@@ -1,3 +1,7 @@
+:root {
+  --productvalue: 0%;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

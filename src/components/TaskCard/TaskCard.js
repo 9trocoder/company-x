@@ -97,6 +97,7 @@ function TaskCard() {
           trans={trans}
           cards={cards}
           bind={bind}
+          key={i}
         />
       ))}
     </div>
