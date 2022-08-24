@@ -173,7 +173,7 @@ function Homepage() {
           <div className="homepage-productivity">
             <div className="hompage-productivity-item1">
               <div className="hompage-productivity-item1-left">
-                <p>Daily Goal</p>
+                <p className="dailygaol">Daily Goal</p>
                 <div className="dailygoalcoutn">
                   <div className="dailygoalitemleft">
                     <p>3/5</p>
@@ -182,7 +182,7 @@ function Homepage() {
                     <p>Tasks</p>
                   </div>
                 </div>
-                <p>
+                <p className="marks">
                   You marked 3/5 tasks <br />
                   are done 🥳
                 </p>
