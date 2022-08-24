@@ -186,7 +186,7 @@ function Homepage() {
                   You marked 3/5 tasks <br />
                   are done 🥳
                 </p>
-                <button>All Tasks</button>
+                <button className="homepage-alltask">All Tasks</button>
               </div>
               <div className="homepage-productivity-item1-right">
                 <div

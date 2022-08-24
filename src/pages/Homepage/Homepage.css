@@ -204,7 +204,52 @@
 
   .homepage-productivity {
     margin-top: 1rem;
+    background-color: #272935;
+    border-radius: 20px;
   }
+
+  .hompage-productivity-item1 {
+    display: flex;
+    gap: 2rem;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .homepage-productivity-item1-left {
+    width: 80%;
+
+  }
+
+  .dailygoalcoutn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .dailygoalitemleft {
+    background-color: #2bb358;
+    font-size: 12px;
+    padding: 8px 1.5rem;
+    margin: 1rem 0px;
+    border-radius: 9999px;
+  }
+
+  .homepage-productivity-item1-right {
+    width: 20%;
+  }
+
+  .homepage-alltask {
+    background-color: #6055ef;
+    border: none;
+    border-radius: 9999px;
+    font-family: inherit;
+    color: #fff;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+
 
   @keyframes growProgressBar {
     0%,
@@ -223,9 +268,9 @@
   }
 
   div[role="progressbar"] {
-    --size: 12rem;
-    --fg: rgb(61, 170, 94);
-    --bg: #def;
+    --size: 100px;
+    --fg: rgb(149, 226, 188);
+    --bg: #35373d;
     --pgPercentage: var(--productvalue);
     animation: growProgressBar 3s 1 forwards;
     width: var(--size);
@@ -235,9 +280,9 @@
     place-items: center;
     background: radial-gradient(
         closest-side,
-        white 80%,
+        #272935 80%,
         transparent 0 99.9%,
-        white 0
+        #272935 0
       ),
       conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
     font-family: Helvetica, Arial, sans-serif;
