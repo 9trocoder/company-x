@@ -27,7 +27,7 @@ function Homepage() {
   const [overviewBtn, setOverviewBtn] = useState("#6055ef");
   const [productivityBtn, setProductivityBtn] = useState("");
   const [productivity, setProductivity] = useState(false);
-  const [filterbutton, setFilterButton] = useState(true);
+  const [filterbutton, setFilterButton] = useState(false);
 
   function setProductValue(value) {
     console.log(`Value was updated to ${value}`);
@@ -103,7 +103,7 @@ function Homepage() {
               Productivity
             </button>
           </div>
-          <div className="filterbutton">
+          <div className="filterbutton" onClick={() => setFilterButton(true)}>
             <svg
               width="25"
               height="25"
@@ -203,7 +203,7 @@ function Homepage() {
 
       {filterbutton && (
         <div className="filter__container">
-          <div className="filter__container-overlay" />
+          <div className="filter__container-overlay"  onClick={() => setFilterButton(false)} />
           <div className="filter__container-body">
             <div className="filter__container-items">
               <div className="filter__items">
@@ -301,8 +301,8 @@ function Homepage() {
               </div>
             </div>
             <div className="filter__container-bottom">
-              <p>Clear All</p>
-              <button>Save Changes</button>
+              <p  onClick={() => setFilterButton(false)}>Clear All</p>
+              <button  onClick={() => setFilterButton(false)}>Save Changes</button>
             </div>
           </div>
 
