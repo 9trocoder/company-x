@@ -260,11 +260,12 @@
 
   .filter__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;pointer-events: none;
   }
 
   .filter__container-overlay {
     position: fixed;
+    pointer-events: all;
     top: 0;
     bottom: 0;
     left: 0;
@@ -274,6 +275,7 @@
   }
 
   .filter__container-body {
+    pointer-events: all;
     position: fixed;
     bottom: 0;
     left: 0;

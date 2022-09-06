@@ -203,7 +203,7 @@ function Homepage() {
 
       {filterbutton && (
         <div className="filter__container">
-          <div className="filter__container-overlay"  onClick={() => setFilterButton(false)} />
+          <div className="filter__container-overlay" onClick={() => setFilterButton(false)} />
           <div className="filter__container-body">
             <div className="filter__container-items">
               <div className="filter__items">
