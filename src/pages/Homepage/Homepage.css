@@ -282,7 +282,11 @@
     position: fixed;
     background-color: #272935;
     border-radius: 20px 20px 0px 0px;
-    padding-top: 2rem;
+    padding-top: 3.5rem;
+  }
+
+  .filter__container-items {
+    margin-bottom: 1rem;
   }
 
   .filter__items {
@@ -360,6 +364,30 @@
 
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  .filter__container-bottom {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .filter__container-bottom p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #747579;
+  }
+
+  .filter__container-bottom button {
+    background-color: #6055ef;
+    border: none;
+    border-radius: 9999px;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
   }
 
   @keyframes growProgressBar {

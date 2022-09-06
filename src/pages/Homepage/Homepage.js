@@ -300,7 +300,12 @@ function Homepage() {
                 </label>
               </div>
             </div>
+            <div className="filter__container-bottom">
+              <p>Clear All</p>
+              <button>Save Changes</button>
+            </div>
           </div>
+
         </div>
       )}
 
