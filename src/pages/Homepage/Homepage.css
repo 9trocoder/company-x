@@ -298,6 +298,10 @@
     align-items: center;
     gap: .6rem;
   }
+
+  .filter__items-name {
+    font-size: 14px;
+  }
   .switch {
     position: relative;
     display: inline-block;

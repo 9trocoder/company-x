@@ -209,8 +209,8 @@ function Homepage() {
               <div className="filter__items">
                 <div className="filter__items-left">
                   <svg
-                    width="25"
-                    height="25"
+                    width="18"
+                    height="18"
                     viewBox="0 0 15 15"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -232,8 +232,8 @@ function Homepage() {
               <div className="filter__items">
                 <div className="filter__items-left">
                   <svg
-                    width="25"
-                    height="25"
+                    width="18"
+                    height="18"
                     viewBox="0 0 15 15"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -256,8 +256,8 @@ function Homepage() {
               <div className="filter__items">
                 <div className="filter__items-left">
                   <svg
-                    width="25"
-                    height="25"
+                    width="18"
+                    height="18"
                     viewBox="0 0 15 15"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -279,8 +279,8 @@ function Homepage() {
               <div className="filter__items">
                 <div className="filter__items-left">
                   <svg
-                    width="25"
-                    height="25"
+                    width="18"
+                    height="18"
                     viewBox="0 0 15 15"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
