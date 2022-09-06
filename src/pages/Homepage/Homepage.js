@@ -209,8 +209,8 @@ function Homepage() {
               <div className="filter__items">
                 <div className="filter__items-left">
                   <svg
-                    width="15"
-                    height="15"
+                    width="25"
+                    height="25"
                     viewBox="0 0 15 15"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -224,18 +224,16 @@ function Homepage() {
                   </svg>
                   <p className="filter__items-name">Total Task</p>
                 </div>
-                <div className="filter__items-right">
-                  <lable className="switch">
-                    <input type="checkbox" />
-                    <span className="slider round"></span>
-                  </lable>
-                </div>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
               </div>
               <div className="filter__items">
                 <div className="filter__items-left">
                   <svg
-                    width="15"
-                    height="15"
+                    width="25"
+                    height="25"
                     viewBox="0 0 15 15"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -249,18 +247,17 @@ function Homepage() {
                   </svg>
                   <p className="filter__items-name">Task Due Soon</p>
                 </div>
-                <div className="filter__items-right">
-                  <lable className="switch">
-                    <input type="checkbox" />
-                    <span className="slider round"></span>
-                  </lable>
-                </div>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+               
               </div>
               <div className="filter__items">
                 <div className="filter__items-left">
                   <svg
-                    width="15"
-                    height="15"
+                    width="25"
+                    height="25"
                     viewBox="0 0 15 15"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -274,18 +271,16 @@ function Homepage() {
                   </svg>
                   <p className="filter__items-name">Completed</p>
                 </div>
-                <div className="filter__items-right">
-                  <lable className="switch">
-                    <input type="checkbox" />
-                    <span className="slider round"></span>
-                  </lable>
-                </div>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
               </div>
               <div className="filter__items">
                 <div className="filter__items-left">
                   <svg
-                    width="15"
-                    height="15"
+                    width="25"
+                    height="25"
                     viewBox="0 0 15 15"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -299,12 +294,10 @@ function Homepage() {
                   </svg>
                   <p className="filter__items-name">Working On</p>
                 </div>
-                <div className="filter__items-right">
-                  <lable className="switch">
-                    <input type="checkbox" />
-                    <span className="slider round"></span>
-                  </lable>
-                </div>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
               </div>
             </div>
           </div>

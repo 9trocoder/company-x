@@ -281,12 +281,23 @@
     z-index: 10010;
     position: fixed;
     background-color: #272935;
-    border-radius: 20px 20px 0px 0px;;
-
-
-
+    border-radius: 20px 20px 0px 0px;
+    padding-top: 2rem;
   }
 
+  .filter__items {
+    border-bottom: 1px solid #303033ad;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .filter__items-left {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+  }
   .switch {
     position: relative;
     display: inline-block;
