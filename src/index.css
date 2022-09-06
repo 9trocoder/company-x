@@ -10,6 +10,16 @@
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  display: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  quotes: "“" "”";
+}
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   box-sizing: inherit;
   margin: 0;
@@ -20,15 +30,38 @@ body {
   font-size: 16px;
   scroll-behavior: smooth;
   position: relative;
-  overflow-x: hidden ;
+  overflow-x: hidden;
   background-color: #1a1a22;
   color: #fff;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  a:hover {
+    color: none;
+    background: transparent;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+  ::selection {
+    color: none;
+    background: none;
+  }
+  /* For Mozilla Firefox */
+  ::-moz-selection {
+    color: none;
+    background: none;
+  }
+}
 
 /* #7E57C2 */
